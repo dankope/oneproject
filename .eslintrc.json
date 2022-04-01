@@ -1,0 +1,16 @@
+{
+    "extends": "eslint:recommended",
+    "parser": "@babel/eslint-parser",
+    "overrides": [
+        {
+            "files": [
+                "*.js"
+            ],
+            "rules": {
+                "no-undef": "off",
+                "semi": "warn",
+                "no-unused-vars": "warn"
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "comments": false,
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "loose": true,
+                "useBuiltIns": "entry",
+                "modules": false,
+                "spec": true,
+                "bugfixes": true,
+                "forceAllTransforms": true,
+                "targets": {
+                    "esmodules": false
+                },
+                "corejs": {
+                    "version": 3,
+                    "proposals": false
+                }
+            }
+        ]
+    ],
+    "env": {
+        "test": {
+            "plugins": [
+                "@babel/plugin-transform-modules-commonjs",
+                "@babel/plugin-proposal-decorators"
+            ]
+        }
+    }
+}
